@@ -1,5 +1,8 @@
-﻿namespace ColegioColombia.Web.Model
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ColegioColombia.Web.Model
 {
+    [Table("Alumnos")]
     public class Alumno
     {
         public int Id { get; set; }
