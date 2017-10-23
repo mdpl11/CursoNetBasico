@@ -14,11 +14,11 @@ namespace ColegioColombia.Web
         {
             var alumno = new Alumno()
             {
-                Nombre = "Laura",
-                Apellido = "Villa",
-                Cedula = 1038333608,
-                Grado = 11,
-                Grupo = "11C"
+                Nombre = txtNombre.Value,
+                Apellido = txtApellido.Value,
+                Cedula = int.Parse(txtCedula.Value),
+                Grado = int.Parse(txtGrado.Value),
+                Grupo = txtGrupo.Value
             };
 
             var context = new ColegioColombiaContext();
