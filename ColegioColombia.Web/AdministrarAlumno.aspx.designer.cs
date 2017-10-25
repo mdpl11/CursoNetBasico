@@ -22,6 +22,15 @@ namespace ColegioColombia.Web {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombre;
         
         /// <summary>
+        /// rfvNombre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombre;
+        
+        /// <summary>
         /// txtApellido control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace ColegioColombia.Web {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtApellido;
         
         /// <summary>
+        /// rfvApellido control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvApellido;
+        
+        /// <summary>
         /// txtCedula control.
         /// </summary>
         /// <remarks>
@@ -38,6 +56,24 @@ namespace ColegioColombia.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtCedula;
+        
+        /// <summary>
+        /// rfvCedula control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCedula;
+        
+        /// <summary>
+        /// rvCedula control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvCedula;
         
         /// <summary>
         /// txtGrado control.
@@ -56,6 +92,15 @@ namespace ColegioColombia.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtGrupo;
+        
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
         
         /// <summary>
         /// btnAdministrarAlumno control.
