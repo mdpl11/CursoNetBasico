@@ -9,7 +9,7 @@ namespace ColegioColombia.Mvc.Models
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(10, ErrorMessage = "El nombre no puede superar 10 caracteres")]
+        [MaxLength(50, ErrorMessage = "El nombre no puede superar 10 caracteres")]
         public string Nombre { get; set; }
 
         [Required]
@@ -20,6 +20,7 @@ namespace ColegioColombia.Mvc.Models
         public long Cedula { get; set; }
 
         [Range(6, 11)]
+        [Required]
         public int Grado { get; set; }
 
         [Display(Prompt = "Código del Grupo del Alumno.", Name = "Código del Grupo")]
