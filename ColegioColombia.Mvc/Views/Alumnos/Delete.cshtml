@@ -1,12 +1,12 @@
 ﻿@model ColegioColombia.Mvc.Models.Alumno
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Eliminar";
 }
 
 <h2>Eliminar Alumno</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Esta seguro que desea eliminar el alumno @Html.ValueFor(model => model.Nombre) @Html.ValueFor(model => model.Apellido)?</h3>
 <div>
     <h4>Alumno</h4>
     <hr />
@@ -58,7 +58,7 @@
 
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            @Html.ActionLink("Volver a la lista", "Index")
         </div>
     }
 </div>

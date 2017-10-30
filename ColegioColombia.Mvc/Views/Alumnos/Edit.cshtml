@@ -1,7 +1,7 @@
 ﻿@model ColegioColombia.Mvc.Models.Alumno
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Editar Alumno";
 }
 
 <h2>Editar Alumno</h2>
@@ -11,7 +11,7 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>Alumno</h4>
+        <h4>Alumno : @Html.ValueFor(model => model.Nombre) @Html.ValueFor(model => model.Apellido)</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.Id)
@@ -58,14 +58,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Guardar" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Volver a la lista", "Index")
 </div>
 
 @section Scripts {
