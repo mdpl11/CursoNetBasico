@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ColegioColombia.Mvc.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,16 @@ namespace ColegioColombia.Mvc.Controllers
         {
             ViewBag.Bienvenida = "Hola Profesor";
             return View();
+        }
+
+        public ActionResult IndexAlterno()
+        {
+            var modelo = new Profesor();
+            modelo.Nombre = "Miguel";
+            modelo.Apellido = "Peláez";
+            modelo.Cedula = 4587854;
+
+            return View(modelo);
         }
     }
 }

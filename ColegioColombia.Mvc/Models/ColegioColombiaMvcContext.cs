@@ -23,5 +23,7 @@ namespace ColegioColombia.Mvc.Models
         }
 
         public System.Data.Entity.DbSet<ColegioColombia.Mvc.Models.Alumno> Alumnoes { get; set; }
+
+        public System.Data.Entity.DbSet<ColegioColombia.Mvc.Models.Profesor> Profesors { get; set; }
     }
 }
