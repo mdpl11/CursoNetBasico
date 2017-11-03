@@ -27,5 +27,22 @@ namespace ColegioColombia.Services
         {
             return $"Hola {nombre}";
         }
+
+        [WebMethod]
+        public string SaludoPersonalizado(string nombre)
+        {
+            int hora = DateTime.Now.Hour;
+
+            if (hora >= 1 && hora <= 11)
+            {
+                return $"Buenos días {nombre}";
+            }
+            else if (hora >= 12 && hora <= 17)
+            {
+                return $"Buenas tardes {nombre}";
+            }
+
+            return $"Buenas noches {nombre}";
+        }
     }
 }
