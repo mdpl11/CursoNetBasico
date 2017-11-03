@@ -21,5 +21,11 @@ namespace ColegioColombia.Services
         {
             return "Hello World";
         }
+
+        [WebMethod]
+        public string Saludo(string nombre)
+        {
+            return $"Hola {nombre}";
+        }
     }
 }
