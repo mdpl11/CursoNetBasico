@@ -4,7 +4,7 @@
     ViewBag.Title = "IndexAlterno";
 }
 
-<h2>Hola @Html.DisplayFor(model => model.Nombre) @Html.DisplayFor(model => model.Apellido)</h2>
+@*<h2>Hola @Html.DisplayFor(model => model.Nombre) @Html.DisplayFor(model => model.Apellido)</h2>*@
+<h2>@ViewBag.SaludoPersonalizado</h2>
 
-<h4>Su cedula es: @Html.DisplayFor(model => model.Cedula)</h4>
-
+    <h4>Su cedula es: @Html.DisplayFor(model => model.Cedula)</h4>

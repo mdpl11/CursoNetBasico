@@ -1,4 +1,5 @@
 ﻿using ColegioColombia.Mvc.Models;
+using ColegioColombia.Mvc.ServicioColombia;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,10 @@ namespace ColegioColombia.Mvc.Controllers
             modelo.Nombre = "Miguel";
             modelo.Apellido = "Peláez";
             modelo.Cedula = 4587854;
+
+            ServicioColombiaSoapClient servicio = new ServicioColombiaSoapClient();
+
+            ViewBag.SaludoPersonalizado = servicio.SaludoPersonalizado($"{modelo.Nombre} {modelo.Apellido}");
 
             return View(modelo);
         }

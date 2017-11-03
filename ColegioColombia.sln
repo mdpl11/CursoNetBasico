@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColegioColombia.Web", "ColegioColombia.Web\ColegioColombia.Web.csproj", "{53CCBC24-5B3E-49D5-BC14-DB371177D69D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColegioColombia.Mvc", "ColegioColombia.Mvc\ColegioColombia.Mvc.csproj", "{8D44E0E7-0EB9-4BBB-B9C3-A8E0CC305614}"
+	ProjectSection(ProjectDependencies) = postProject
+		{142C5D75-35B6-41E6-AA8D-9C80756A16A5} = {142C5D75-35B6-41E6-AA8D-9C80756A16A5}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColegioColombia.Services", "ColegioColombia.Services\ColegioColombia.Services.csproj", "{142C5D75-35B6-41E6-AA8D-9C80756A16A5}"
 EndProject
