@@ -44,5 +44,33 @@ namespace ColegioColombia.Services
 
             return $"Buenas noches {nombre}";
         }
+
+        [WebMethod]
+        public decimal Sumar(decimal a, decimal b)
+        {
+            return (a + b);
+        }
+
+        [WebMethod]
+        public decimal Restar(decimal a, decimal b)
+        {
+            return (a - b);
+        }
+
+        [WebMethod]
+        public decimal Multiplicar(decimal a, decimal b)
+        {
+            return a * b;
+        }
+
+        [WebMethod]
+        public decimal Dividir(decimal a, decimal b)
+        {
+            //if (B == 0) { return -1; }
+
+            //return Convert.ToDecimal(A / B);
+
+            return b == 0 ? -1 : Convert.ToDecimal(a / b);
+        }
     }
 }
