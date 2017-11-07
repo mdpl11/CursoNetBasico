@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColegioColombia.Services", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColegioColombia.WebApi", "ColegioColombia.WebApi\ColegioColombia.WebApi.csproj", "{D3A6CF28-A953-4186-A317-7BBDD67D6284}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColegioColombia.Wcf", "ColegioColombia.Wcf\ColegioColombia.Wcf.csproj", "{8B3651A7-D868-41D1-A244-10BEE31CA436}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{D3A6CF28-A953-4186-A317-7BBDD67D6284}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3A6CF28-A953-4186-A317-7BBDD67D6284}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3A6CF28-A953-4186-A317-7BBDD67D6284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3651A7-D868-41D1-A244-10BEE31CA436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3651A7-D868-41D1-A244-10BEE31CA436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3651A7-D868-41D1-A244-10BEE31CA436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3651A7-D868-41D1-A244-10BEE31CA436}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
