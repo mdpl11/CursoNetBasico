@@ -17,6 +17,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColegioColombia.Wcf", "ColegioColombia.Wcf\ColegioColombia.Wcf.csproj", "{8B3651A7-D868-41D1-A244-10BEE31CA436}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColegioColombia.Cliente", "ColegioColombia.Cliente\ColegioColombia.Cliente.csproj", "{5894B52A-BA6F-43F7-A332-4E42851D2294}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8B3651A7-D868-41D1-A244-10BEE31CA436} = {8B3651A7-D868-41D1-A244-10BEE31CA436}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

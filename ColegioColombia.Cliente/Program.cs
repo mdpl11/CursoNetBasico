@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ColegioColombia.Cliente.ServicioBienvenida;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -10,6 +11,7 @@ namespace ColegioColombia.Cliente
     {
         private static void Main()
         {
+            ObtenerAlumnosWcf();
             CrearAlumno().Wait();
             ConsultarAlumnos().Wait();
 
@@ -77,6 +79,23 @@ namespace ColegioColombia.Cliente
                     Console.WriteLine("");
                 }
             }
+        }
+
+        private static void ObtenerAlumnosWcf()
+        {
+            ServicioBienvenidaClient client = new ServicioBienvenidaClient();
+            int idAlumnoConsulta = 1;
+
+            ServicioBienvenida.Alumno alumno = client.ConsultarAlumno(idAlumnoConsulta);
+
+            client.Close();
+
+            Console.WriteLine("");
+            Console.WriteLine("---------------------Invocando Consultar Alumno WCF------------------------");
+            Console.WriteLine("");
+            Console.WriteLine($"Id: {alumno.Id} - Nombre: {alumno.Nombre} - Apellido: {alumno.Apellido}");
+            Console.WriteLine("-----------------------------------------------------------");
+            Console.WriteLine("");
         }
     }
 }
