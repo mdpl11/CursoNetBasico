@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ColegioColombia.Wcf.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -13,5 +14,8 @@ namespace ColegioColombia.Wcf
     {
         [OperationContract]
         string SaludoPersonalizado(string nombre);
+
+        [OperationContract]
+        Alumno ConsultarAlumno(int id);
     }
 }
